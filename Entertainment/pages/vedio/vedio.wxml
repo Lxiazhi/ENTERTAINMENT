@@ -1,0 +1,26 @@
+<swiper indicator-dots="{{lunbo.indicatorDots}}"
+  autoplay="{{lunbo.autoplay}}" interval="{{lunbo.interval}}" duration="{{lunbo.duration}}">
+  <block wx:for="{{lunbo.imgUrls}}" wx:key="{{index}}">
+    <swiper-item class="sli">
+      <image src="{{item}}" class="slide-image"  height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="title">专业精品课</view>
+<scroll-view scroll-y="true" style="height:{{scrollHeight}}px" bindscrolltolower="loadmore" bindscrolltoupper="fresh">
+    <view wx:for="{{vedio}}" wx:key="{{index}}" class="box" data-id="{{index+1}}" bindtap="handle">
+         <view >
+         <image src="{{item.pic_url}}" class="pic_url"  height="200"/>
+         </view>
+         <view class="bo">
+             <view class="cat">{{item.short_description}}</view>
+             <view class="word">{{item.easy_name}}|{{item.duration_fmt}}</view>
+             <view class="study">
+                <view class="le">{{item.numbers}}人学习</view><view>查看详情》</view>
+             </view>
+         </view>
+    </view>
+  </scroll-view>
+ <view>
+   <loading hidden="{{hidden}}">数据加载...</loading>
+ </view>

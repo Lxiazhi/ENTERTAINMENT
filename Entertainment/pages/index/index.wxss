@@ -1,0 +1,7 @@
+
+
+
+.cont{width:100%;display:block;height:100%;position:relative}
+.bg{width:100%;display:block;height:100%}
+page{height:100%;}
+.btn{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:322rpx;height:322rpx;text-align: center;line-height:322rpx;border-radius:50%;background:#d9c9a8;opacity:0.8}

@@ -1,0 +1,8 @@
+.slide-image{width:100%;height:100%}
+.swiper{height:200px}
+.box{padding:10px;box-shadow: border-box}
+.title{padding:0 20rpx;font:32rpx/30px "微软雅黑"}
+.wrap{padding: 0 20rpx;box-sizing: border-box;display:flex;flex-wrap:wrap;justify-content: space-between;font:24rpx/60rpx "微软雅黑";width:100%}
+.con{width:200rpx;}
+.img{width:100%;height:300rpx}
+.des{height:120rpx;overflow:hidden}

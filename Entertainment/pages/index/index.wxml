@@ -1,0 +1,5 @@
+
+<view class="cont">
+  <image src="../../public/image/icon/index.jpg" class="bg"></image>
+  <view class="btn" bindtap="handle">欢迎进入</view>
+</view>

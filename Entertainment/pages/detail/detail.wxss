@@ -1,0 +1,9 @@
+
+#myVideo{display:block;margin:0 auto;width:98%}
+.btn-area{display:flex;padding:10px}
+.put{flex:4;border:1px solid #eee;height:40px;margin-right:10px}
+.btn{flex:1;height:40px;}
+.word{padding:10px}
+.title{text-align: center;font:20px/40px "微软雅黑"}
+.course{text-align: left;font:16px/40px "微软雅黑"}
+.de{text-align: left;font:12px/20px "微软雅黑"}

@@ -1,0 +1,57 @@
+<view class="section tc">
+   <view class="videos">
+  <video id="myVideo" src="{{detail.vedio}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls poster="{{detail.poster}}" ></video>
+  </view>
+
+</view>
+<scroll-view scroll-y="true" style="height:{{scrollHeight}}px">
+   <view class="box" >
+            <view class="btn-area">
+            <input bindblur="bindInputBlur" class="put"/>
+            <button bindtap="bindSendDanmu" class="btn">发送弹幕</button>
+            </view>
+        <text class="title">参演明星</text>
+       <view >
+        <scroll-view scroll-x="true" class="bigbox" style="width:100%">
+            <view class=" info1">
+                <image src="{{detail.actor1}}"></image>
+                <image src="{{detail.actor2}}"></image>
+                <image src="{{detail.actor3}}"></image>
+                <image src="{{detail.actor4}}"></image>
+            </view>
+          </scroll-view>  
+       </view>
+       <text class="title">选集</text>
+        <scroll-view scroll-x="true" class="bigbox" style="width:100%">
+                <view class=" info1">
+                    <view class="series">1</view>
+                    <view class="series">2</view>
+                    <view class="series">3</view>
+                    <view class="series">4</view>
+                    <view class="series">5</view>
+                    <view class="series">6</view>
+                </view>
+                 <view class=" info1">
+                     <view class="series">7</view>
+                    <view class="series">8</view>
+                    <view class="series">9</view>
+                    <view class="series">10</view>
+                    <view class="series">11</view>
+                    <view class="series">12</view>
+                  
+                </view>
+                 <view class=" info1">
+                     <view class="series">13</view>
+                    <view class="series">14</view>
+                    <view class="series">15</view>
+                    <view class="series">16</view>
+                    <view class="series">17</view>
+                    <view class="series">18</view>
+                </view>
+            </scroll-view>  
+          <text class="title">剧情介绍</text>  
+          <view class="dec">{{detail.detail}}</view>
+   </view>
+</scroll-view>
+
+

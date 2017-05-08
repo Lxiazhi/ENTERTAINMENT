@@ -1,0 +1,97 @@
+<scroll-view scroll-y="true" class="box" style="height:{{510}}px">
+    <view class="bg top">
+        <view class="tu same">
+               <image src="{{photo}}" class="photo "></image>
+       </view>
+       <view class="log same">登录</view>
+       <view class="same">|</view>
+       <view class="register same">注册</view>
+    </view>
+    <view class="member bg">
+        <view class="le">
+        <image src="../../public/image/icon/vip.png" class="vip"></image>
+        <view class="dec same">开通VIP会员</view>
+        </view>
+        <view class="ri">
+          >
+        </view>
+    </view>
+
+<view class="main main1">
+     <view class="ti1">
+         <view class="zuo">
+             <image src="../../public/image/icon/load.png"     class="tupian">           </image>
+            <view class="zi">离线中心</view>
+        </view>
+        <view class="arrow">
+               >
+        </view>
+     </view>
+      <view class="ti1">
+         <view class="zuo">
+             <image src="../../public/image/icon/whatch.png"     class="tupian">           </image>
+            <view class="zi">观看历史</view>
+        </view>
+        <view class="arrow">
+               >
+        </view>
+     </view>
+     <view class="ti1">
+         <view class="zuo">
+             <image src="../../public/image/icon/get.png"     class="tupian">           </image>
+            <view class="zi">我的收藏</view>
+        </view>
+        <view class="arrow">
+               >
+        </view>
+     </view>
+     <view class="ti1">
+         <view class="zuo">
+             <image src="../../public/image/icon/sub.png"     class="tupian">           </image>
+            <view class="zi">我的订阅</view>
+        </view>
+        <view class="arrow">
+               >
+        </view>
+     </view>
+ </view>
+
+ <view class="main main1">
+     <view class="ti1">
+         <view class="zuo">
+             <image src="../../public/image/icon/gift.png"     class="tupian">           </image>
+            <view class="zi">推荐有礼</view>
+        </view>
+        <view class="arrow">
+               >
+        </view>
+     </view>
+      <view class="ti1">
+         <view class="zuo">
+             <image src="../../public/image/icon/wallet.png"     class="tupian">           </image>
+            <view class="zi">我的钱包</view>
+        </view>
+        <view class="arrow">
+               >
+        </view>
+     </view>
+     <view class="ti1">
+         <view class="zuo">
+             <image src="../../public/image/icon/order.png"     class="tupian">           </image>
+            <view class="zi">我的订单</view>
+        </view>
+        <view class="arrow">
+               >
+        </view>
+     </view>
+     <view class="ti1">
+         <view class="zuo">
+             <image src="../../public/image/icon/service.png"     class="tupian">           </image>
+            <view class="zi">客服中心</view>
+        </view>
+        <view class="arrow">
+               >
+        </view>
+     </view>
+ </view>
+</scroll-view>

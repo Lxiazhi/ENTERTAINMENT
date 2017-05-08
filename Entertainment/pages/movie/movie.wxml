@@ -1,0 +1,25 @@
+<view class="box">
+<swiper indicator-dots="{{lunbo.indicatorDots}}"
+  autoplay="{{lunbo.autoplay}}" interval="{{lunbo.interval}}" duration="{{lunbo.duration}}" class="swiper">
+  <block wx:for="{{lunbo.imgUrls}}" wx:key="{{index}}">
+    <swiper-item class="sli">
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class="title">五月热播</view>
+<scroll-view  scroll-y="true"  style="height:{{scrollHeight}}px">
+<view class="wrap">
+<view class="smallbox" wx:for="{{dataList}}" wx:key="{{index}}">
+        <view class="con" data-id="{{index+1}}" bindtap="handle">
+           <view class="classname">
+               <image src="{{item.src}}" class="img"></image>
+           </view>
+           <view class="des">
+               <text>{{item.name}}</text>
+           </view>
+        </view>
+</view>
+</view>
+</scroll-view>

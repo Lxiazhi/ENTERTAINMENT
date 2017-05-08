@@ -1,0 +1,38 @@
+<view class="top">
+    <audio 
+    poster="{{music.poster}}"
+    name="{{music.name}}"    
+    author="{{music.author}}" 
+    src="{{music.src}}" 
+    id="myAudio" 
+   
+    bindended="endedHandle" 
+    bindtimeupdate="dur"  ></audio>
+    <image src="{{music.poster}}" class="tu"></image>
+    <image src="{{bg}}" class="circle" bindtap="bo"></image>
+</view>
+
+<view class="play1">
+    <view class="last" bindtap="handlelast">上一曲</view>
+    <view class="next" bindtap="handlenext">下一曲</view>
+    <view class="pro">
+       <progress percent="{{current}}" />
+      
+    </view>
+     <view class="how">{{time}}</view>
+</view>
+<scroll-view  scroll-y="true"  style="height:{{scrollHeight}}px">
+    <view wx:for="{{musicList}}" wx:key="{{index}}" class="box">
+        <view class="smallbox">
+           <view class="photo">
+                <image src="{{item.poster}}" class="img" data-idx="{{index}}" bindtap="playMusic"></image>
+           </view>
+           <view class="desc">
+                     
+                   <view class="name">{{item.name}}</view>
+                   <view class="singer">歌手：{{item.author}}</view>
+                   <view class="album">所属专辑：{{item.album}}</view>
+           </view>
+        </view> 
+    </view>
+</scroll-view>

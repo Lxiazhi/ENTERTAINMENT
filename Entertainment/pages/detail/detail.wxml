@@ -1,0 +1,23 @@
+
+
+<view class="section tc">
+   <view class="videos">
+  <video id="myVideo" src="{{dataList.url}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls ></video>
+  </view>
+  <view class="btn-area">
+    <input bindblur="bindInputBlur" class="put"/>
+    <button bindtap="bindSendDanmu" class="btn">发送弹幕</button>
+  </view>
+</view>
+ <view class="title">课程详情</view>  
+<scroll-view scroll-y="true" style="height:{{scrollHeight}}px">
+<view class="word">
+       
+      <view class="course">课程概览</view>  
+       <view class="de">"{{dataList.description}}"</view>   
+      <view class="course">适合人群</view>   
+      <view  class="de">"{{dataList.precondition}}"</view>  
+      <view class="course">学习收获</view>   
+      <view  class="de">"{{dataList.purpose}}"</view>  
+</view>
+</scroll-view>
